@@ -3,6 +3,7 @@ body {
   align-content: center;
   justify-items: center;
   font-family: 'Inter', sans-serif;
+  user-select: none;
 }
 a {
   color: black;
@@ -12,10 +13,16 @@ a {
 .app-container {
   width: 375px;
   height: 812px;
-  align-content: center;
-  justify-items: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(226, 246, 255, 1);
+}
+
+.app-container .logo-wrapper {
+  width: 100%;
+  text-align: center;
 }
 
 .app-title {
@@ -44,6 +51,48 @@ a {
   font-size: 16px;
 }
 
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 100%;
+  padding: 55px 30px;
+  gap: 40px;
+}
+.screen-container .unit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.screen-container .unit-list .unit-item {
+  width: 90px;
+  height: fit-content;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(37, 40, 105, 1);
+}
+
+.screen-container .unit-list .unit-item div {
+  width: 87.63px;
+  height: 87.63px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: rgba(162, 192, 219, 1);
+  border-radius: 12px;
+  align-content: center;
+  justify-items: center;
+}
+
+.screen-container .unit-list .unit-item span {
+  font-size: 12.76px;
+  font-weight: 400;
+  line-height: 17.86px;
+}
+
 .button {
   background: rgba(162, 192, 219, 1);
   width: fit-content;
@@ -53,4 +102,8 @@ a {
   line-height: 24px;
   text-decoration: none;
   box-shadow: 0px 4px 4px 0px rgba(58, 39, 89, 0.19);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button:hover {
+  font-size: 24px;
 }
