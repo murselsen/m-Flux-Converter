@@ -54,7 +54,6 @@ a {
 .screen-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   height: 100%;
   padding: 55px 30px;
   gap: 40px;
@@ -91,6 +90,9 @@ a {
   font-size: 12.76px;
   font-weight: 400;
   line-height: 17.86px;
+}
+.screen-container .unit-list .unit-item:hover div {
+  padding: 15px;
 }
 
 .button {
