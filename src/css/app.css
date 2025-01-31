@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  align-content: center;
+  justify-items: center;
+  font-family: 'Inter', sans-serif;
+}
+a {
+  color: black;
+  font-weight: bolder;
+  font-size: small;
+}
+.app-container {
+  width: 375px;
+  height: 812px;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  background: rgba(226, 246, 255, 1);
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+.app-title h1 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 0px;
+}
+.app-title h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36.31px;
+}
+
+.app-title a {
+  transition: font-size 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.app-title a:hover {
+  font-size: 16px;
+}
+
+.button {
+  background: rgba(162, 192, 219, 1);
+  width: fit-content;
+  border-radius: 14px;
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px 0px rgba(58, 39, 89, 0.19);
+}
