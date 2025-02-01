@@ -1,4 +1,4 @@
-/* // tempurature-form
+// tempurature-form
 const tempuratureForm = {
   fromValue: null,
   fromSelect: document.getElementById('from-select').value,
@@ -39,4 +39,3 @@ tempuratureForm.form.addEventListener('input', e => {
   tempuratureForm.calculate();
   console.log('Tempurature : ', tempuratureForm);
 });
- */
