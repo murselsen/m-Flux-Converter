@@ -3,7 +3,8 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   user-select: none;
-  position: relative;
+  align-content: center;
+  justify-items: center;
 }
 a {
   color: black;
@@ -13,9 +14,6 @@ a {
 .app-container {
   width: 375px;
   height: 812px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,6 +59,11 @@ a {
   padding: 55px 30px;
   gap: 40px;
 }
+
+.screen-container .screen-title {
+  width: 100%;
+}
+
 .screen-container .unit-list {
   display: flex;
   flex-wrap: wrap;
@@ -107,13 +110,55 @@ a {
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
-  box-shadow: 0px 4px 4px 0px rgba(58, 39, 89, 0.19);
+  box-shadow: 0px 4px 4px 0px #3a275930;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   align-self: center;
 }
 .button:hover {
   font-size: 24px;
 }
+
+.screen-container .screen-content .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 92px;
+}
+
+.screen-container .screen-content .form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.screen-container .screen-content .form .form-group .form-input {
+  padding: 16px 15px;
+  font-size: 14.76px;
+  font-weight: 400;
+  line-height: 17.86px;
+  border: 3px solid rgba(162, 192, 219, 1);
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(37, 40, 105, 1);
+}
+
+.screen-container .screen-content .form .form-group .form-input::placeholder {
+  color: rgba(37, 40, 105, 1);
+}
+
+.screen-container .screen-content .form .form-group .form-select {
+  width: 75%;
+  background: rgba(162, 192, 219, 1);
+  box-shadow: 0px 4px 4px 0px rgba(58, 39, 89, 0.19);
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 14.76px;
+  line-height: 17.86px;
+  border: none;
+}
+/* 
+  */
 
 @media (max-width: 768px) {
   .app-container {
@@ -122,11 +167,4 @@ a {
     height: 100vh;
     margin: 0;
   }
-<<<<<<< HEAD
-
-  .screen-container .unit-list .unit-item {
-    width: 90px;
-  }
-=======
->>>>>>> fd9655ec05edd475b260d79c89639611bb8ced9e
 }
