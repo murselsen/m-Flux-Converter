@@ -110,3 +110,12 @@ a {
 .button:hover {
   font-size: 24px;
 }
+
+@media (max-width: 768px) {
+  .app-container {
+    transform: translateY(0);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}
