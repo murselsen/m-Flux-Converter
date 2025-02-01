@@ -122,8 +122,11 @@ a {
     height: 100vh;
     margin: 0;
   }
+<<<<<<< HEAD
 
   .screen-container .unit-list .unit-item {
     width: 90px;
   }
+=======
+>>>>>>> fd9655ec05edd475b260d79c89639611bb8ced9e
 }
