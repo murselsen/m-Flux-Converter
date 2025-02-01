@@ -6,10 +6,25 @@ const tempuratureForm = {
   toSelect: document.getElementById('to-select').value,
   calculate: function () {
     const { fromValue, fromSelect, toSelect } = this;
+    if (fromValue !== null) {
+      let frValue = parseFloat(fromValue);
+      // Farenheight to Celsius
+      if (fromSelect === 'farenheight' && toSelect === 'celsius') {
+        this.toValue = (((frValue - 32) * 5) / 9).toFixed(2);
+      }
+      // Farenheight to Farenheight
+      if (fromSelect === 'farenheight' && toSelect === 'farenheight') {
+        this.toValue = frValue.toFixed(2);
+      }
 
-    if (fromSelect === 'farenheight' && toSelect === 'celsius') {
-      this.toValue = ((fromValue - 32) * 5) / 9;
+      if (fromSelect === 'farenheight' && toSelect === 'kelvin') {
+        // (°F + 459.67) × 5/9
+        console.log('Farenheight to Kelvin');
+
+        this.toValue = (((frValue + 459.67) * 5) / 9).toFixed(2);
+      }
     }
+
     document.getElementById('to-value').value = this.toValue;
   },
   form: document.querySelector('.form'),
@@ -37,5 +52,4 @@ tempuratureForm.form.addEventListener('input', e => {
       break;
   }
   tempuratureForm.calculate();
-  console.log('Tempurature : ', tempuratureForm);
 });
