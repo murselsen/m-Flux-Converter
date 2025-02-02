@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tempurature | Flux: Unit Converter</title>
+    <title>Weight Mass | Flux: Unit Converter</title>
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,23 +18,23 @@
   <body>
     <div class="app-container">
       <div class="screen-container">
-        <h2 class="screen-title">Tempurature</h2>
+        <h2 class="screen-title">Weight-Mass</h2>
         <div class="screen-content">
-          <form class="form" id="tempurature">
+          <form class="form" id="weightMass">
             <div class="form-group from">
               <input
                 type="number"
                 class="form-input"
                 name="from-value"
-                placeholder="From °F"
+                placeholder="From"
                 id="from-value"
                 required
               />
               <select class="form-select" name="from-select" id="from-select">
                 <optgroup label="From">
-                  <option value="farenheight" selected>Farenheight</option>
-                  <option value="celsius">Celsius</option>
-                  <option value="kelvin">Kelvin</option>
+                  <option value="gram" selected>Gram</option>
+                  <option value="kilogram">Kilogram</option>
+                  <option value="milligram">Milligram</option>
                 </optgroup>
               </select>
             </div>
@@ -45,15 +45,15 @@
                 name="to-value"
                 id="to-value"
                 ,
-                placeholder="To °C"
+                placeholder="To"
                 disabled="Weqwe"
                 required
               />
               <select class="form-select" name="to-select" id="to-select">
                 <optgroup label="To">
-                  <option value="farenheight">Farenheight</option>
-                  <option value="celsius" selected>Celsius</option>
-                  <option value="kelvin">Kelvin</option>
+                  <option value="gram">Gram</option>
+                  <option value="kilogram" selected>Kilogram</option>
+                  <option value="milligram">Milligram</option>
                 </optgroup>
               </select>
             </div>

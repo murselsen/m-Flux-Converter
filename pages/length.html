@@ -18,23 +18,23 @@
   <body>
     <div class="app-container">
       <div class="screen-container">
-        <h2 class="screen-title">Tempurature</h2>
+        <h2 class="screen-title">Length</h2>
         <div class="screen-content">
-          <form class="form" id="tempurature">
+          <form class="form" id="length-form">
             <div class="form-group from">
               <input
                 type="number"
                 class="form-input"
                 name="from-value"
-                placeholder="From °F"
+                placeholder="From "
                 id="from-value"
                 required
               />
               <select class="form-select" name="from-select" id="from-select">
                 <optgroup label="From">
-                  <option value="farenheight" selected>Farenheight</option>
-                  <option value="celsius">Celsius</option>
-                  <option value="kelvin">Kelvin</option>
+                  <option value="meter" selected>Meter</option>
+                  <option value="kilometer">Kilometer</option>
+                  <option value="centimeter">Centimeter</option>
                 </optgroup>
               </select>
             </div>
@@ -44,16 +44,15 @@
                 class="form-input"
                 name="to-value"
                 id="to-value"
-                ,
-                placeholder="To °C"
+                placeholder="To"
                 disabled="Weqwe"
                 required
               />
               <select class="form-select" name="to-select" id="to-select">
                 <optgroup label="To">
-                  <option value="farenheight">Farenheight</option>
-                  <option value="celsius" selected>Celsius</option>
-                  <option value="kelvin">Kelvin</option>
+                  <option value="meter">Meter</option>
+                  <option value="kilometer" selected>Kilometer</option>
+                  <option value="centimeter">Centimeter</option>
                 </optgroup>
               </select>
             </div>
@@ -63,6 +62,6 @@
       </div>
     </div>
     <script src="../src/js/app.js"></script>
-    <script src="../src/js/tempurature.js"></script>
+    <script src="../src/js/length.js"></script>
   </body>
 </html>
